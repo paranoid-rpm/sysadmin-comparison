@@ -1,62 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Военный системный администратор</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Военный специалист — системное администрирование</title>
+  <meta name="description" content="Военный специалист: особенности службы, должностные обязанности и компетенции." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Военный ИТ-специалист / Связист</h1>
-            <p>Специфика службы, ответственность и боевые задачи</p>
+  <a class="skip" href="#content">Перейти к содержанию</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div class="brand__text">
+          <div class="brand__title">Военный специалист</div>
+          <div class="brand__subtitle">Системное администрирование · служебная специфика</div>
         </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="index.html">Главная</a>
-            <a href="civilian.html">Гражданская сфера</a>
-            <a href="military.html" class="active">Военная сфера</a>
-            <a href="comparison.html">Сравнение</a>
-            <a href="test.html">Проверка знаний</a>
-        </div>
+      </div>
+      <div class="topbar__meta">
+        <a class="chip chip--link" href="index.html">На главную</a>
+        <span class="chip chip--muted">Скелет</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навигация по сайту">
+      <div class="sidebar__section">
+        <div class="sidebar__title">Разделы</div>
+        <a class="navlink" href="index.html">Главная</a>
+        <a class="navlink" href="civilian.html">Гражданский специалист</a>
+        <a class="navlink navlink--active" href="military.html">Военный специалист</a>
+        <a class="navlink" href="comparison.html">Сравнение</a>
+        <a class="navlink" href="test.html">Проверка знаний</a>
+      </div>
+      <div class="sidebar__section">
+        <div class="sidebar__title">Материалы</div>
+        <a class="navlink" href="sources.html">Источники</a>
+      </div>
     </nav>
-    <main class="container">
-        <section class="content-section">
-            <h2>ИТ-специалист в Вооруженных Силах</h2>
-            <p>В военной структуре аналогичные функции выполняют специалисты войск связи, войск информационных операций и подразделений РЭБ (радиоэлектронной борьбы). Деятельность военного «системного администратора» регламентируется воинскими уставами, приказами командиров, директивами Минобороны и законом «О государственной тайне».</p>
-            
-            <h3>Специфика должностных обязанностей</h3>
-            <ul class="custom-list">
-                <li><strong>Развертывание узлов связи:</strong> Оперативное развертывание полевых сетей связи, серверов и командных пунктов в условиях, приближенных к боевым.</li>
-                <li><strong>Криптография и защита:</strong> Работа со специализированным ПО для шифрования данных. Строгое соблюдение режимов секретности (ЗГТ - защита государственной тайны).</li>
-                <li><strong>Ремонт в полевых условиях:</strong> Обслуживание и восстановление оборудования (маршрутизаторы, спутниковые терминалы, защищенные АРМ) при отсутствии стационарных сервисных центров.</li>
-                <li><strong>Боевое дежурство:</strong> Несение круглосуточных дежурств по обеспечению непрерывной связи командования.</li>
-                <li><strong>Универсальность военнослужащего:</strong> Выполнение общих воинских обязанностей (огневая, тактическая подготовка, караулы), помимо профильных ИТ-задач.</li>
-            </ul>
 
-            <h3>Требования к кандидатам</h3>
-            <p>Помимо технического образования, военный ИТ-специалист проходит строгий отбор. Важнейшими критериями являются:</p>
-            <ul class="custom-list">
-                <li>Категория годности по здоровью (А или Б).</li>
-                <li>Прохождение проверки ФСБ для получения допуска к государственной тайне.</li>
-                <li>Психологическая устойчивость и готовность выполнять приказы в стрессовых ситуациях.</li>
-                <li>Сдача нормативов по физической подготовке.</li>
-            </ul>
-
-            <h3>Ответственность военного специалиста</h3>
-            <p>Уровень ответственности в военной сфере несоизмеримо выше. Утрата связи, утечка данных или отказ техники могут привести к срыву боевой задачи и человеческим потерям. Наказания регламентируются Дисциплинарным уставом и Уголовным кодексом РФ (вплоть до трибунала за преступную халатность или госизмену).</p>
-
-            <div class="alert-box warning">
-                <strong>Внимание:</strong> Военнослужащий-специалист подчиняется строгой субординации. Приказы командира не обсуждаются, а подлежат немедленному исполнению.
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container text-center">
-            <p>© 2026 Информационный проект.</p>
+    <main class="content" id="content" role="main">
+      <section class="dochead">
+        <div class="kicker">Раздел</div>
+        <h1 class="h1">Военный специалист (ИТ/связь) — функции, компетенции, ответственность</h1>
+        <p class="lead">Здесь будет собрана расширенная информация о служебных обязанностях ИТ-специалиста в военной структуре (подразделения связи и смежные направления): субординация, режимы, требования к допуску, ответственность, особенности эксплуатации техники.</p>
+        <div class="dochead__meta">
+          <span class="chip">Формат: справка</span>
+          <span class="chip">Далее: режимы, допуски, ИБ, ответственность</span>
         </div>
-    </footer>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">План наполнения</h2>
+          <p class="muted">Добавим подробности по пунктам (по твоим следующим запросам).</p>
+        </div>
+
+        <div class="grid">
+          <div class="panel">
+            <div class="panel__title">1) Регламент и подчинение</div>
+            <ul class="factlist">
+              <li>Субординация и строгая вертикальная иерархия.</li>
+              <li>Приказы, дисциплина, регламенты.</li>
+              <li>Режимы секретности и требования к соблюдению.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <div class="panel__title">2) Должностные обязанности</div>
+            <ul class="factlist">
+              <li>Эксплуатация защищенных контуров/узлов связи.</li>
+              <li>Дежурства, устойчивость связи, восстановление.</li>
+              <li>Работа в условиях ограниченных ресурсов.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <div class="panel__title">3) Компетенции</div>
+            <ul class="factlist">
+              <li>ИБ и режимные требования, учет и контроль.</li>
+              <li>Сети, администрирование, диагностика.</li>
+              <li>Физподготовка и психологическая устойчивость (как требование службы).</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <div class="panel__title">4) Ответственность</div>
+            <ul class="factlist">
+              <li>Дисциплинарная ответственность по уставам.</li>
+              <li>Повышенные риски при срыве задачи/утечках.</li>
+              <li>Требования к сохранности средств связи и документов.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+          <div>© 2026 · SysAdmin Comparison</div>
+          <div class="muted">Раздел: военный специалист</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Источники</title>
+  <meta name="description" content="Список источников и материалов, используемых для наполнения сайта." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#content">Перейти к содержанию</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div class="brand__text">
+          <div class="brand__title">Источники</div>
+          <div class="brand__subtitle">Ссылки на открытые материалы</div>
+        </div>
+      </div>
+      <div class="topbar__meta">
+        <a class="chip chip--link" href="index.html">На главную</a>
+        <span class="chip chip--muted">Скелет</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навигация по сайту">
+      <div class="sidebar__section">
+        <div class="sidebar__title">Разделы</div>
+        <a class="navlink" href="index.html">Главная</a>
+        <a class="navlink" href="civilian.html">Гражданский специалист</a>
+        <a class="navlink" href="military.html">Военный специалист</a>
+        <a class="navlink" href="comparison.html">Сравнение</a>
+        <a class="navlink" href="test.html">Проверка знаний</a>
+      </div>
+      <div class="sidebar__section">
+        <div class="sidebar__title">Материалы</div>
+        <a class="navlink navlink--active" href="sources.html">Источники</a>
+      </div>
+    </nav>
+
+    <main class="content" id="content" role="main">
+      <section class="dochead">
+        <div class="kicker">Раздел</div>
+        <h1 class="h1">Источники (будут пополняться)</h1>
+        <p class="lead">Здесь фиксируются ссылки на открытые материалы, на основе которых будет наполняться сайт. По мере добавления контента — добавляем и ссылки.</p>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Базовые источники (старт)</h2>
+          <p class="muted">Список будет расширен и структурирован по разделам.</p>
+        </div>
+
+        <div class="panel">
+          <div class="panel__title">Профстандарты и должностные инструкции</div>
+          <ul class="linklist">
+            <li><a href="https://classinform.ru/profstandarty/06.026-sistemnyi-administrator-informatcionno-kommunikatcionnykh-sistem.html" target="_blank" rel="noopener">Профстандарт 06.026 (ClassInform)</a></li>
+            <li><a href="https://specialitet.ru/profstandards/06/1427" target="_blank" rel="noopener">Профстандарт 06.026 (specialitet.ru)</a></li>
+            <li><a href="https://secrets.tbank.ru/documents/sistemnyi-administrator/" target="_blank" rel="noopener">Пример должностной инструкции системного администратора (Т-Банк/Тинькофф Журнал)</a></li>
+          </ul>
+          <div class="muted">Далее добавим нормативную базу по военной сфере и материалы по режимам/допускам.</div>
+        </div>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+          <div>© 2026 · SysAdmin Comparison</div>
+          <div class="muted">Раздел: источники</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

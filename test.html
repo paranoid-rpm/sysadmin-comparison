@@ -1,78 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интерактивная проверка знаний</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Проверка знаний</title>
+  <meta name="description" content="Тест по теме: сравнение гражданского и военного специалиста (системное администрирование)." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Проверка знаний</h1>
-            <p>Тест по теме сравнительного анализа специалистов</p>
+  <a class="skip" href="#content">Перейти к содержанию</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div class="brand__text">
+          <div class="brand__title">Проверка знаний</div>
+          <div class="brand__subtitle">Тест · будет расширяться</div>
         </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="index.html">Главная</a>
-            <a href="civilian.html">Гражданская сфера</a>
-            <a href="military.html">Военная сфера</a>
-            <a href="comparison.html">Сравнение</a>
-            <a href="test.html" class="active">Проверка знаний</a>
-        </div>
+      </div>
+      <div class="topbar__meta">
+        <a class="chip chip--link" href="index.html">На главную</a>
+        <span class="chip chip--muted">Скелет</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навигация по сайту">
+      <div class="sidebar__section">
+        <div class="sidebar__title">Разделы</div>
+        <a class="navlink" href="index.html">Главная</a>
+        <a class="navlink" href="civilian.html">Гражданский специалист</a>
+        <a class="navlink" href="military.html">Военный специалист</a>
+        <a class="navlink" href="comparison.html">Сравнение</a>
+        <a class="navlink navlink--active" href="test.html">Проверка знаний</a>
+      </div>
+      <div class="sidebar__section">
+        <div class="sidebar__title">Материалы</div>
+        <a class="navlink" href="sources.html">Источники</a>
+      </div>
     </nav>
-    <main class="container">
-        <section class="quiz-container">
-            <h2>Тест из 4 вопросов</h2>
-            <div id="quiz">
-                <div class="question-block" id="block1">
-                    <h3>1. Какой профстандарт регламентирует работу системного администратора в гражданской сфере?</h3>
-                    <div class="options">
-                        <label><input type="radio" name="q1" value="a"> ГОСТ Р ИСО 9001</label>
-                        <label><input type="radio" name="q1" value="b"> Профстандарт 06.026</label>
-                        <label><input type="radio" name="q1" value="c"> Воинский устав</label>
-                    </div>
-                </div>
 
-                <div class="question-block" id="block2">
-                    <h3>2. Какая главная особенность ответственности военного ИТ-специалиста в отличие от гражданского?</h3>
-                    <div class="options">
-                        <label><input type="radio" name="q2" value="a"> Штраф вычитается из премии</label>
-                        <label><input type="radio" name="q2" value="b"> Запрет на использование интернета в течение года</label>
-                        <label><input type="radio" name="q2" value="c"> Возможна уголовная ответственность (трибунал) за невыполнение боевой задачи</label>
-                    </div>
-                </div>
+    <main class="content" id="content" role="main">
+      <section class="dochead">
+        <div class="kicker">Раздел</div>
+        <h1 class="h1">Тест (черновой каркас)</h1>
+        <p class="lead">На следующем шаге добавим расширенный банк вопросов и привязку формулировок к разделам сайта.</p>
+      </section>
 
-                <div class="question-block" id="block3">
-                    <h3>3. Какую операционную систему чаще всего внедряют в военных и защищенных контурах РФ (импортозамещение)?</h3>
-                    <div class="options">
-                        <label><input type="radio" name="q3" value="a"> Astra Linux Special Edition</label>
-                        <label><input type="radio" name="q3" value="b"> Windows 10 Enterprise</label>
-                        <label><input type="radio" name="q3" value="c"> Ubuntu</label>
-                    </div>
-                </div>
-
-                <div class="question-block" id="block4">
-                    <h3>4. В какой структуре специалист подчиняется строгой вертикальной субординации, где приказы не обсуждаются?</h3>
-                    <div class="options">
-                        <label><input type="radio" name="q4" value="a"> Гражданская ИТ-компания</label>
-                        <label><input type="radio" name="q4" value="b"> Военные подразделения (связь, ИТ)</label>
-                        <label><input type="radio" name="q4" value="c"> Во всех сферах одинаково</label>
-                    </div>
-                </div>
-
-                <button id="submitBtn" class="btn" style="width: 100%; font-size: 1.1rem; padding: 15px;">Узнать результат</button>
-            </div>
-            
-            <div id="result" class="result-box hidden"></div>
-        </section>
-    </main>
-    <footer>
-        <div class="container text-center">
-            <p>© 2026 Информационный проект.</p>
+      <section class="section">
+        <div class="panel">
+          <div class="panel__title">Статус</div>
+          <p class="muted">Сейчас тест временно свернут, чтобы сначала зафиксировать единый стиль и структуру. В следующем запросе могу вернуть тест и сделать его более серьезным (без «мемных» формулировок, с пояснением ответов и ссылками на разделы).</p>
+          <a class="btn" href="comparison.html">Перейти к сравнению</a>
         </div>
-    </footer>
-    <script src="script.js"></script>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+          <div>© 2026 · SysAdmin Comparison</div>
+          <div class="muted">Раздел: тест</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,63 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сравнительный анализ: Системный администратор</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сравнительный анализ — должностные инструкции и компетенции (ОБЗР)</title>
+  <meta name="description" content="Многостраничный информационный сайт: сравнение должностных инструкций и компетенций гражданского и военного специалиста (системное администрирование), ОБЗР." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Сравнительный анализ должностных инструкций</h1>
-            <p>Гражданский и военный специалист (Системное администрирование)</p>
+  <a class="skip" href="#content">Перейти к содержанию</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div class="brand__text">
+          <div class="brand__title">SysAdmin Comparison</div>
+          <div class="brand__subtitle">ОБЗР · должностные инструкции и компетенции</div>
         </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="index.html" class="active">Главная</a>
-            <a href="civilian.html">Гражданская сфера</a>
-            <a href="military.html">Военная сфера</a>
-            <a href="comparison.html">Сравнение</a>
-            <a href="test.html">Проверка знаний</a>
-        </div>
+      </div>
+
+      <div class="topbar__meta">
+        <span class="chip">Многостраничный сайт</span>
+        <span class="chip chip--muted">Версия: скелет</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навигация по сайту">
+      <div class="sidebar__section">
+        <div class="sidebar__title">Разделы</div>
+        <a class="navlink navlink--active" href="index.html">Главная</a>
+        <a class="navlink" href="civilian.html">Гражданский специалист</a>
+        <a class="navlink" href="military.html">Военный специалист</a>
+        <a class="navlink" href="comparison.html">Сравнение</a>
+        <a class="navlink" href="test.html">Проверка знаний</a>
+      </div>
+
+      <div class="sidebar__section">
+        <div class="sidebar__title">Материалы</div>
+        <a class="navlink" href="sources.html">Источники</a>
+      </div>
+
+      <div class="sidebar__footer">
+        <div class="muted">Сайт оформлен в строгом информационном стиле.</div>
+      </div>
     </nav>
-    <main class="container">
-        <section class="intro">
-            <h2>Введение в проблематику</h2>
-            <p>В современном информационном обществе роль системных администраторов становится ключевой как в гражданском, так и в военном секторе. Системное администрирование — это обеспечение штатной работы компьютерной техники, сети и программного обеспечения. Однако должностные обязанности, требования к квалификации и уровень ответственности радикально отличаются в зависимости от сферы применения.</p>
-            <p>Данный информационный ресурс посвящен детальному разбору и сравнительному анализу должностных инструкций и компетенций специалистов в области системного администрирования. Проект подготовлен по дисциплине ОБЗР (Основы безопасности и защиты Родины).</p>
-        </section>
-        
-        <div class="grid-2">
-            <div class="card">
-                <h3>Гражданский сектор</h3>
-                <p>Ориентация на бизнес-процессы, корпоративную этику и экономическую эффективность. Деятельность регулируется Трудовым кодексом РФ и профстандартами (Профстандарт 06.026).</p>
-                <a href="civilian.html" class="btn">Изучить подробнее</a>
-            </div>
-            <div class="card">
-                <h3>Военный сектор</h3>
-                <p>Ориентация на бесперебойность связи, безопасность данных, государственную тайну и строгое выполнение приказов. Деятельность регулируется воинскими уставами.</p>
-                <a href="military.html" class="btn">Изучить подробнее</a>
-            </div>
+
+    <main class="content" id="content" role="main">
+      <section class="hero">
+        <div class="hero__left">
+          <div class="kicker">Тема проекта</div>
+          <h1 class="h1">Сравнительный анализ должностных инструкций/компетенций для гражданского и военного специалиста</h1>
+          <p class="lead">Специальность: сетевое и системное администрирование. Дисциплина: ОБЗР. На этом этапе развернуты скелет страниц и единый визуальный стиль; наполнение будет добавляться по запросам.</p>
+          <div class="hero__actions">
+            <a class="btn" href="comparison.html">Открыть сравнение</a>
+            <a class="btn btn--ghost" href="sources.html">Открыть источники</a>
+          </div>
         </div>
 
-        <section class="info-block mt-4">
-            <h2>Что такое должностная инструкция?</h2>
-            <div class="intro">
-                <p><strong>Должностная инструкция</strong> — это внутренний нормативный документ, в котором фиксируются обязанности, полномочия, зона ответственности и требования к сотруднику по конкретной позиции. В трудовых отношениях этот документ упорядочивает распределение задач, снижает вероятность спорных ситуаций и служит ориентиром при оценке эффективности работы.</p>
-                <ul class="custom-list">
-                    <li><strong>Функция:</strong> Обеспечение единообразного подхода к выполнению задач.</li>
-                    <li><strong>Структура:</strong> Общие положения, должностные обязанности, права, ответственность.</li>
-                    <li><strong>Значение:</strong> Оптимизация процессов (в гражданской сфере) и повышение боеготовности (в военной сфере).</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container text-center">
-            <p>© 2026 Информационный проект. Сравнительный анализ компетенций специалистов.</p>
+        <div class="hero__right">
+          <div class="panel">
+            <div class="panel__title">Что будет добавляться дальше</div>
+            <ul class="factlist">
+              <li>Развернутые определения, структура инструкций, нормативная база.</li>
+              <li>Компетенции системного администратора (гражданская/военная сфера).</li>
+              <li>Расширенные таблицы: ответственность, допуски, режимы, риски.</li>
+              <li>Иллюстрации и схемы (с подписью и ссылкой на источник).</li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Навигация</h2>
+          <p class="muted">Переходи в нужный раздел — контент будем наращивать постепенно.</p>
+        </div>
+
+        <div class="cards">
+          <a class="card" href="civilian.html">
+            <div class="card__title">Гражданский специалист</div>
+            <div class="card__text">Должностные обязанности, компетенции, требования, ответственность.</div>
+            <div class="card__meta">Перейти →</div>
+          </a>
+          <a class="card" href="military.html">
+            <div class="card__title">Военный специалист</div>
+            <div class="card__text">Служебные обязанности, субординация, режимы, ответственность.</div>
+            <div class="card__meta">Перейти →</div>
+          </a>
+          <a class="card" href="comparison.html">
+            <div class="card__title">Сравнение</div>
+            <div class="card__text">Табличное сопоставление по ключевым критериям.</div>
+            <div class="card__meta">Перейти →</div>
+          </a>
+          <a class="card" href="test.html">
+            <div class="card__title">Проверка знаний</div>
+            <div class="card__text">Короткий тест. Позже расширим банк вопросов.</div>
+            <div class="card__meta">Перейти →</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="callout">
+          <div class="callout__title">Примечание по оформлению</div>
+          <div class="callout__text">По твоему требованию — без «слов автора»: текст будет строго информационный, с указанием источников на странице «Источники» и в подвалах страниц (где нужно).</div>
+        </div>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+          <div>© 2026 · SysAdmin Comparison</div>
+          <div class="muted">Скелет + стиль · дальнейшее наполнение по запросам</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
