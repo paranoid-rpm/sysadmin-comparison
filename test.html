@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Проверка знаний</title>
-  <meta name="description" content="Тест по теме: сравнение гражданского и военного специалиста (системное администрирование)." />
+  <meta name="description" content="Тест по теме: сравнение гражданского и военного специалиста (системное администрирование, связь/ИТ)." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,12 +16,12 @@
         <div class="brand__mark" aria-hidden="true"></div>
         <div class="brand__text">
           <div class="brand__title">Проверка знаний</div>
-          <div class="brand__subtitle">Тест · будет расширяться</div>
+          <div class="brand__subtitle">Тест по нормативной базе и компетенциям</div>
         </div>
       </div>
       <div class="topbar__meta">
         <a class="chip chip--link" href="index.html">На главную</a>
-        <span class="chip chip--muted">Скелет</span>
+        <a class="chip chip--link" href="sources.html">Источники</a>
       </div>
     </div>
   </header>
@@ -45,22 +45,127 @@
     <main class="content" id="content" role="main">
       <section class="dochead">
         <div class="kicker">Раздел</div>
-        <h1 class="h1">Тест (черновой каркас)</h1>
-        <p class="lead">На следующем шаге добавим расширенный банк вопросов и привязку формулировок к разделам сайта.</p>
+        <h1 class="h1">Тест</h1>
+        <p class="lead">Вопросы составлены по материалам разделов сайта и нормативным источникам, указанным на странице «Источники».</p>
+        <div class="dochead__meta">
+          <span class="chip">Формат: 10 вопросов</span>
+          <span class="chip">Тип: один правильный ответ</span>
+        </div>
       </section>
 
       <section class="section">
-        <div class="panel">
-          <div class="panel__title">Статус</div>
-          <p class="muted">Сейчас тест временно свернут, чтобы сначала зафиксировать единый стиль и структуру. В следующем запросе могу вернуть тест и сделать его более серьезным (без «мемных» формулировок, с пояснением ответов и ссылками на разделы).</p>
-          <a class="btn" href="comparison.html">Перейти к сравнению</a>
+        <div class="section__head">
+          <h2 class="h2">Вопросы</h2>
+          <p class="muted">После выбора ответов нажми «Проверить».</p>
         </div>
+
+        <form class="quiz" id="quiz" data-quiz>
+          <div class="quiz__q" data-q="q1" data-a="b">
+            <p class="quiz__qtitle">1) Что фиксирует профессиональный стандарт 06.026 в качестве цели вида профессиональной деятельности?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q1" value="a">Разработка прикладного ПО для бизнеса</label>
+              <label class="quiz__opt"><input type="radio" name="q1" value="b">Обеспечение требуемого качественного бесперебойного режима работы ИКС</label>
+              <label class="quiz__opt"><input type="radio" name="q1" value="c">Продвижение ИТ‑услуг на рынке</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q2" data-a="c">
+            <p class="quiz__qtitle">2) Какой документ разъясняет, что ТК РФ не содержит прямого упоминания должностной инструкции, но она используется для регулирования трудовых отношений?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q2" value="a">Паспорт гражданина РФ</label>
+              <label class="quiz__opt"><input type="radio" name="q2" value="b">ГОСТ на кабельные системы</label>
+              <label class="quiz__opt"><input type="radio" name="q2" value="c">Письмо Роструда № 3042-6-0</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q3" data-a="a">
+            <p class="quiz__qtitle">3) Какие грифы секретности указаны в законе «О государственной тайне»?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q3" value="a">«Особой важности», «совершенно секретно», «секретно»</label>
+              <label class="quiz__opt"><input type="radio" name="q3" value="b">«Служебно», «для внутреннего пользования», «конфиденциально»</label>
+              <label class="quiz__opt"><input type="radio" name="q3" value="c">«Открыто», «полуоткрыто», «закрыто»</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q4" data-a="b">
+            <p class="quiz__qtitle">4) Что относится к типовым обязанностям системного администратора по профстандарту 06.026?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q4" value="a">Ведение кадрового делопроизводства</label>
+              <label class="quiz__opt"><input type="radio" name="q4" value="b">Регистрация и устранение инцидентов, диагностика и локализация отказов</label>
+              <label class="quiz__opt"><input type="radio" name="q4" value="c">Составление финансовой отчётности</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q5" data-a="a">
+            <p class="quiz__qtitle">5) Какой акт утверждает общевоинские уставы ВС РФ?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q5" value="a">Указ Президента РФ № 1495</label>
+              <label class="quiz__opt"><input type="radio" name="q5" value="b">Постановление муниципалитета</label>
+              <label class="quiz__opt"><input type="radio" name="q5" value="c">Решение совета директоров</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q6" data-a="c">
+            <p class="quiz__qtitle">6) Что, согласно профстандарту, включает работы по резервному копированию?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q6" value="a">Исключительно закупку носителей</label>
+              <label class="quiz__opt"><input type="radio" name="q6" value="b">Только удаление устаревших копий</label>
+              <label class="quiz__opt"><input type="radio" name="q6" value="c">Резервное копирование, архивирование и восстановление конфигураций/данных по планам</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q7" data-a="b">
+            <p class="quiz__qtitle">7) В каком документе закреплены поощрения и дисциплинарные взыскания в военной службе?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q7" value="a">В профстандарте 06.026</label>
+              <label class="quiz__opt"><input type="radio" name="q7" value="b">В Дисциплинарном уставе ВС РФ</label>
+              <label class="quiz__opt"><input type="radio" name="q7" value="c">В должностной инструкции системного администратора</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q8" data-a="a">
+            <p class="quiz__qtitle">8) Как в открытых учебных материалах описывается назначение войск связи?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q8" value="a">Развертывание системы связи и обеспечение управления, эксплуатация средств автоматизации на пунктах управления</label>
+              <label class="quiz__opt"><input type="radio" name="q8" value="b">Только обеспечение питания объектов</label>
+              <label class="quiz__opt"><input type="radio" name="q8" value="c">Только ремонт бытовой техники</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q9" data-a="c">
+            <p class="quiz__qtitle">9) Что включает «инвентаризация и учет» по профстандарту (в общих чертах)?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q9" value="a">Только составление расписаний отпусков</label>
+              <label class="quiz__opt"><input type="radio" name="q9" value="b">Только обучение пользователей</label>
+              <label class="quiz__opt"><input type="radio" name="q9" value="c">Учет технических и программных средств, маркировка и фиксация размещения, отчеты по компонентам</label>
+            </div>
+          </div>
+
+          <div class="quiz__q" data-q="q10" data-a="b">
+            <p class="quiz__qtitle">10) Какой раздел ТК РФ устанавливает дисциплинарные взыскания (как общий ориентир для гражданской сферы)?</p>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q10" value="a">Ст. 19 (152‑ФЗ)</label>
+              <label class="quiz__opt"><input type="radio" name="q10" value="b">Ст. 192 ТК РФ</label>
+              <label class="quiz__opt"><input type="radio" name="q10" value="c">Указ № 1495</label>
+            </div>
+          </div>
+
+          <div class="panel">
+            <button class="btn" type="submit">Проверить</button>
+            <a class="btn btn--ghost" href="comparison.html">К разделу сравнения</a>
+          </div>
+
+          <div class="quiz__result" id="quizResult" hidden>
+            <div class="panel__title">Результат</div>
+            <div id="quizScore" class="muted"></div>
+          </div>
+        </form>
       </section>
 
       <footer class="footer" role="contentinfo">
         <div class="footer__inner">
           <div>© 2026 · SysAdmin Comparison</div>
-          <div class="muted">Раздел: тест</div>
+          <div class="muted">Раздел: тест · обновлено</div>
         </div>
       </footer>
     </main>
