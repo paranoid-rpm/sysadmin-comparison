@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
+  <rect x="1" y="1" width="878" height="478" rx="18" stroke="rgba(255,255,255,.18)"/>
+
+  <rect x="90" y="110" width="220" height="260" rx="14" stroke="#7aa2d6" stroke-width="3"/>
+  <rect x="120" y="140" width="160" height="40" rx="10" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <rect x="120" y="200" width="160" height="40" rx="10" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <rect x="120" y="260" width="160" height="40" rx="10" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <rect x="120" y="320" width="160" height="40" rx="10" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+
+  <path d="M360 240h140" stroke="rgba(255,255,255,.22)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M500 240l-18-10v20z" fill="rgba(255,255,255,.22)"/>
+
+  <rect x="540" y="130" width="250" height="220" rx="14" stroke="#9fb8aa" stroke-width="3"/>
+  <circle cx="595" cy="190" r="18" stroke="rgba(255,255,255,.24)" stroke-width="2"/>
+  <circle cx="595" cy="190" r="6" fill="#9fb8aa"/>
+  <circle cx="700" cy="190" r="18" stroke="rgba(255,255,255,.24)" stroke-width="2"/>
+  <circle cx="700" cy="190" r="6" fill="#9fb8aa"/>
+  <circle cx="595" cy="290" r="18" stroke="rgba(255,255,255,.24)" stroke-width="2"/>
+  <circle cx="595" cy="290" r="6" fill="#9fb8aa"/>
+  <circle cx="700" cy="290" r="18" stroke="rgba(255,255,255,.24)" stroke-width="2"/>
+  <circle cx="700" cy="290" r="6" fill="#9fb8aa"/>
+
+  <path d="M613 190h69" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+  <path d="M595 208v64" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+  <path d="M613 290h69" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+  <path d="M700 208v64" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+
+  <text x="120" y="92" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Эксплуатация ИКС</text>
+  <text x="560" y="112" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Документация и учет</text>
+
+  <text x="126" y="167" fill="rgba(255,255,255,.60)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">Инциденты</text>
+  <text x="126" y="227" fill="rgba(255,255,255,.60)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">Мониторинг</text>
+  <text x="126" y="287" fill="rgba(255,255,255,.60)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">Резервирование</text>
+  <text x="126" y="347" fill="rgba(255,255,255,.60)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">Обновления</text>
+</svg>

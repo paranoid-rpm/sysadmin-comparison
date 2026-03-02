@@ -49,6 +49,10 @@
 
     <main class="content" id="content" role="main">
       <section class="hero">
+        <div class="hero__canvas" aria-hidden="true">
+          <canvas data-scene="constellation"></canvas>
+        </div>
+
         <div class="hero__left">
           <div class="kicker">Тема проекта</div>
           <h1 class="h1">Сравнительный анализ должностных инструкций и компетенций гражданского и военного специалиста</h1>
@@ -60,15 +64,10 @@
         </div>
 
         <div class="hero__right">
-          <div class="panel">
-            <div class="panel__title">Содержание сайта</div>
-            <ul class="factlist">
-              <li>Трудовые функции и требования к квалификации (профстандарт 06.026).</li>
-              <li>Внутренняя служба и дисциплина (общевоинские уставы).</li>
-              <li>Режим секретности и допуск (закон о государственной тайне).</li>
-              <li>Сравнительные критерии: цели, режимы, ответственность, документация.</li>
-            </ul>
-          </div>
+          <figure class="figure">
+            <img src="assets/illus-overview.svg" alt="Схематическая иллюстрация: контуры гражданской и военной сфер" />
+            <figcaption>Схема используется как ориентир для структуры разделов и критериев сравнения.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -91,14 +90,32 @@
           </a>
           <a class="card" href="comparison.html">
             <div class="card__title">Сравнение</div>
-            <div class="card__text">Табличное сопоставление по ключевым критериям, без пустых блоков.</div>
+            <div class="card__text">Табличное сопоставление по критериям: цели, режимы, документы, ответственность.</div>
             <div class="card__meta">Перейти →</div>
           </a>
           <a class="card" href="test.html">
             <div class="card__title">Проверка знаний</div>
-            <div class="card__text">Тест по нормативной базе и содержанию разделов.</div>
+            <div class="card__text">Контрольные вопросы по разделам и нормативной базе.</div>
             <div class="card__meta">Перейти →</div>
           </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Как читать материалы</h2>
+          <p class="muted">Короткие правила сопоставления, используемые на страницах.</p>
+        </div>
+
+        <div class="grid">
+          <div class="panel">
+            <div class="panel__title">Принцип «норма → функция → документ»</div>
+            <p>Там, где это возможно, требования привязаны к источнику (нормативному документу или профстандарту), далее — к трудовой/служебной функции, затем — к типовым документам учета и контроля.</p>
+          </div>
+          <div class="panel">
+            <div class="panel__title">Границы открытой информации</div>
+            <p>Разделы по военной сфере и режиму секретности приведены в рамках общедоступных формулировок (без описания организационных процедур и закрытых методик).</p>
+          </div>
         </div>
       </section>
 

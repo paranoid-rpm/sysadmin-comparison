@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
+  <rect x="1" y="1" width="878" height="478" rx="18" stroke="rgba(255,255,255,.18)"/>
+
+  <path d="M150 330c0-48 44-88 98-88h48c54 0 98 40 98 88" stroke="#7aa2d6" stroke-width="3"/>
+  <path d="M250 150v92" stroke="#7aa2d6" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="250" cy="146" r="10" fill="#7aa2d6"/>
+
+  <path d="M250 190l-70 70M250 190l70 70" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="520" y="150" width="260" height="210" rx="16" stroke="#9fb8aa" stroke-width="3"/>
+  <path d="M545 190h210M545 230h210M545 270h160" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-linecap="round"/>
+
+  <path d="M370 240h150" stroke="rgba(255,255,255,.22)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M520 240l-18-10v20z" fill="rgba(255,255,255,.22)"/>
+
+  <text x="140" y="110" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Узел связи</text>
+  <text x="545" y="130" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Пункт управления</text>
+
+  <text x="545" y="392" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">режим → доступ → учет</text>
+</svg>

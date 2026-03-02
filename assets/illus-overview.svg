@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
+  <rect x="1" y="1" width="878" height="478" rx="18" stroke="rgba(255,255,255,.18)"/>
+
+  <path d="M120 120h260v240H120z" stroke="#7aa2d6" stroke-width="3"/>
+  <path d="M500 120h260v240H500z" stroke="#9fb8aa" stroke-width="3"/>
+
+  <path d="M250 120v-40M630 120v-40" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <path d="M250 80c0-18 16-32 36-32h40c20 0 36 14 36 32" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <path d="M630 80c0-18 16-32 36-32h40c20 0 36 14 36 32" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+
+  <path d="M380 240h120" stroke="rgba(255,255,255,.22)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M500 240l-18-10v20z" fill="rgba(255,255,255,.22)"/>
+
+  <circle cx="220" cy="190" r="22" stroke="rgba(255,255,255,.26)" stroke-width="2"/>
+  <circle cx="220" cy="190" r="6" fill="#7aa2d6"/>
+  <path d="M200 250h100" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <path d="M200 290h160" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+
+  <circle cx="600" cy="190" r="22" stroke="rgba(255,255,255,.26)" stroke-width="2"/>
+  <circle cx="600" cy="190" r="6" fill="#9fb8aa"/>
+  <path d="M560 250h160" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <path d="M560 290h120" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+
+  <text x="150" y="150" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Гражданская сфера</text>
+  <text x="532" y="150" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Военная сфера</text>
+
+  <text x="150" y="390" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">норма → функция → документ</text>
+  <text x="532" y="390" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">устав/закон → режим → учет</text>
+</svg>
