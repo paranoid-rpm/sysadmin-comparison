@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная проверка знаний</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Проверка знаний</h1>
+            <p>Тест по теме сравнительного анализа специалистов</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Главная</a>
+            <a href="civilian.html">Гражданская сфера</a>
+            <a href="military.html">Военная сфера</a>
+            <a href="comparison.html">Сравнение</a>
+            <a href="test.html" class="active">Проверка знаний</a>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="quiz-container">
+            <h2>Тест из 4 вопросов</h2>
+            <div id="quiz">
+                <div class="question-block" id="block1">
+                    <h3>1. Какой профстандарт регламентирует работу системного администратора в гражданской сфере?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> ГОСТ Р ИСО 9001</label>
+                        <label><input type="radio" name="q1" value="b"> Профстандарт 06.026</label>
+                        <label><input type="radio" name="q1" value="c"> Воинский устав</label>
+                    </div>
+                </div>
+
+                <div class="question-block" id="block2">
+                    <h3>2. Какая главная особенность ответственности военного ИТ-специалиста в отличие от гражданского?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> Штраф вычитается из премии</label>
+                        <label><input type="radio" name="q2" value="b"> Запрет на использование интернета в течение года</label>
+                        <label><input type="radio" name="q2" value="c"> Возможна уголовная ответственность (трибунал) за невыполнение боевой задачи</label>
+                    </div>
+                </div>
+
+                <div class="question-block" id="block3">
+                    <h3>3. Какую операционную систему чаще всего внедряют в военных и защищенных контурах РФ (импортозамещение)?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> Astra Linux Special Edition</label>
+                        <label><input type="radio" name="q3" value="b"> Windows 10 Enterprise</label>
+                        <label><input type="radio" name="q3" value="c"> Ubuntu</label>
+                    </div>
+                </div>
+
+                <div class="question-block" id="block4">
+                    <h3>4. В какой структуре специалист подчиняется строгой вертикальной субординации, где приказы не обсуждаются?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> Гражданская ИТ-компания</label>
+                        <label><input type="radio" name="q4" value="b"> Военные подразделения (связь, ИТ)</label>
+                        <label><input type="radio" name="q4" value="c"> Во всех сферах одинаково</label>
+                    </div>
+                </div>
+
+                <button id="submitBtn" class="btn" style="width: 100%; font-size: 1.1rem; padding: 15px;">Узнать результат</button>
+            </div>
+            
+            <div id="result" class="result-box hidden"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container text-center">
+            <p>© 2026 Информационный проект.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
