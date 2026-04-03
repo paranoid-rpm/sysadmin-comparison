@@ -1,29 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
-  <rect x="1" y="1" width="878" height="478" rx="18" stroke="rgba(255,255,255,.18)"/>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
+  <defs>
+    <linearGradient id="overviewBg" x1="90" y1="60" x2="790" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#222a1b"/>
+      <stop offset="1" stop-color="#11150f"/>
+    </linearGradient>
+    <linearGradient id="overviewLine" x1="120" y1="120" x2="760" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d5df8c"/>
+      <stop offset="1" stop-color="#738754"/>
+    </linearGradient>
+  </defs>
 
-  <path d="M120 120h260v240H120z" stroke="#7aa2d6" stroke-width="3"/>
-  <path d="M500 120h260v240H500z" stroke="#9fb8aa" stroke-width="3"/>
+  <rect width="880" height="480" rx="24" fill="url(#overviewBg)"/>
+  <path d="M48 90H832M48 240H832M48 390H832" stroke="rgba(227,234,191,.08)" stroke-width="1"/>
+  <path d="M146 42V438M440 42V438M734 42V438" stroke="rgba(227,234,191,.08)" stroke-width="1"/>
+  <rect x="28" y="28" width="824" height="424" rx="20" stroke="rgba(217,227,172,.18)" stroke-width="2"/>
+  <path d="M54 54h48M54 54v48M826 54h-48M826 54v48M54 426h48M54 426v-48M826 426h-48M826 426v-48" stroke="#d5df8c" stroke-width="2.5" stroke-linecap="round"/>
 
-  <path d="M250 120v-40M630 120v-40" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
-  <path d="M250 80c0-18 16-32 36-32h40c20 0 36 14 36 32" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
-  <path d="M630 80c0-18 16-32 36-32h40c20 0 36 14 36 32" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+  <rect x="110" y="108" width="258" height="252" rx="18" fill="rgba(255,255,255,.02)" stroke="rgba(217,227,172,.16)"/>
+  <rect x="512" y="108" width="258" height="252" rx="18" fill="rgba(255,255,255,.02)" stroke="rgba(217,227,172,.16)"/>
 
-  <path d="M380 240h120" stroke="rgba(255,255,255,.22)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M500 240l-18-10v20z" fill="rgba(255,255,255,.22)"/>
+  <text x="136" y="136" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">CIVIL SECTOR</text>
+  <text x="538" y="136" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">MILITARY SECTOR</text>
 
-  <circle cx="220" cy="190" r="22" stroke="rgba(255,255,255,.26)" stroke-width="2"/>
-  <circle cx="220" cy="190" r="6" fill="#7aa2d6"/>
-  <path d="M200 250h100" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
-  <path d="M200 290h160" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <circle cx="208" cy="196" r="28" stroke="#d5df8c" stroke-width="3"/>
+  <circle cx="208" cy="196" r="8" fill="#d5df8c"/>
+  <path d="M252 182h78M252 212h56M150 258h180M150 290h148M150 322h166" stroke="rgba(238,242,221,.58)" stroke-width="3" stroke-linecap="round"/>
 
-  <circle cx="600" cy="190" r="22" stroke="rgba(255,255,255,.26)" stroke-width="2"/>
-  <circle cx="600" cy="190" r="6" fill="#9fb8aa"/>
-  <path d="M560 250h160" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
-  <path d="M560 290h120" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <rect x="560" y="168" width="144" height="64" rx="12" stroke="#8ea464" stroke-width="3"/>
+  <circle cx="588" cy="200" r="8" fill="#d5df8c"/>
+  <path d="M610 188h64M610 212h46M560 270h144M560 302h112" stroke="rgba(238,242,221,.58)" stroke-width="3" stroke-linecap="round"/>
 
-  <text x="150" y="150" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Гражданская сфера</text>
-  <text x="532" y="150" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Военная сфера</text>
+  <path d="M368 234H512" stroke="url(#overviewLine)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M512 234l-20-12v24z" fill="#d5df8c"/>
+  <circle cx="440" cy="234" r="34" stroke="rgba(213,223,140,.18)" stroke-width="2"/>
+  <circle cx="440" cy="234" r="18" stroke="#d5df8c" stroke-width="2"/>
+  <path d="M440 200v-22M440 290v-22M406 234h-22M496 234h-22" stroke="rgba(213,223,140,.45)" stroke-width="2" stroke-linecap="round"/>
 
-  <text x="150" y="390" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">норма → функция → документ</text>
-  <text x="532" y="390" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">устав/закон → режим → учет</text>
+  <text x="150" y="392" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">STANDARD -> FUNCTION -> DOCUMENT</text>
+  <text x="528" y="392" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">REGULATION -> ACCESS -> CONTROL</text>
 </svg>

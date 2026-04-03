@@ -1,8 +1,9 @@
-(() => {
+﻿(() => {
   const year = new Date().getFullYear();
   const footers = document.querySelectorAll('.footer__inner > div:first-child');
-  footers.forEach(el => {
-    if (el.textContent.includes('©')) {
+  footers.forEach((el) => {
+    const text = (el.textContent || '').trim();
+    if (text.includes('SysAdmin Comparison')) {
       el.textContent = `© ${year} · SysAdmin Comparison`;
     }
   });
@@ -12,17 +13,18 @@
   const scoreEl = document.getElementById('quizScore');
 
   if (quiz) {
-    quiz.addEventListener('submit', (e) => {
-      e.preventDefault();
+    quiz.addEventListener('submit', (event) => {
+      event.preventDefault();
 
       const questions = quiz.querySelectorAll('.quiz__q');
       let correct = 0;
       let answered = 0;
 
-      questions.forEach(q => {
-        const name = q.getAttribute('data-q');
-        const right = q.getAttribute('data-a');
+      questions.forEach((question) => {
+        const name = question.getAttribute('data-q');
+        const right = question.getAttribute('data-a');
         const picked = quiz.querySelector(`input[name="${name}"]:checked`);
+
         if (picked) answered += 1;
         if (picked && picked.value === right) correct += 1;
       });
@@ -31,7 +33,7 @@
       if (resultWrap && scoreEl) {
         resultWrap.hidden = false;
         scoreEl.textContent = `Верно: ${correct} из ${total}. Отвечено: ${answered} из ${total}.`;
-        resultWrap.scrollIntoView({behavior:'smooth', block:'start'});
+        resultWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   }
@@ -39,80 +41,154 @@
   const canvas = document.querySelector('canvas[data-scene="constellation"]');
   if (!canvas) return;
 
-  const ctx = canvas.getContext('2d');
+  const context = canvas.getContext('2d');
+  if (!context) return;
+
   const DPR = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+  let width = 0;
+  let height = 0;
+  let animationId = 0;
 
-  function resize(){
-    const r = canvas.getBoundingClientRect();
-    canvas.width = Math.floor(r.width * DPR);
-    canvas.height = Math.floor(r.height * DPR);
-  }
-  resize();
-  window.addEventListener('resize', resize, {passive:true});
+  const palette = {
+    glow: ['rgba(201, 211, 107, 0.16)', 'rgba(135, 155, 91, 0.13)', 'rgba(79, 101, 64, 0.18)'],
+    line: 'rgba(218, 227, 168, 0.12)',
+    pulse: 'rgba(236, 242, 198, 0.22)',
+    dot: 'rgba(224, 232, 179, 0.34)'
+  };
 
-  const W = () => canvas.width;
-  const H = () => canvas.height;
-
-  const N = 42;
-  const pts = Array.from({length:N}, () => ({
-    x: Math.random(),
-    y: Math.random(),
-    vx: (Math.random() - 0.5) * 0.00035,
-    vy: (Math.random() - 0.5) * 0.00035,
+  const orbs = Array.from({ length: 5 }, (_, index) => ({
+    x: 0.18 + index * 0.18,
+    y: 0.22 + (index % 2) * 0.24,
+    radius: 0.18 + index * 0.015,
+    dx: (Math.random() - 0.5) * 0.0009,
+    dy: (Math.random() - 0.5) * 0.0006,
+    color: palette.glow[index % palette.glow.length]
   }));
 
-  function step(){
-    const w = W(), h = H();
-    ctx.clearRect(0,0,w,h);
+  const pings = Array.from({ length: 8 }, () => ({
+    x: Math.random(),
+    y: Math.random(),
+    size: 1 + Math.random() * 2,
+    alpha: 0.08 + Math.random() * 0.16,
+    phase: Math.random() * Math.PI * 2
+  }));
 
-    ctx.fillStyle = 'rgba(255,255,255,.04)';
-    ctx.fillRect(0,0,w,h);
-
-    const ax = 122, ay = 162, az = 214; // --accent
-    const bx = 159, by = 184, bz = 170; // --accent2
-
-    for (const p of pts){
-      p.x += p.vx;
-      p.y += p.vy;
-      if (p.x < 0 || p.x > 1) p.vx *= -1;
-      if (p.y < 0 || p.y > 1) p.vy *= -1;
-    }
-
-    for (let i=0;i<pts.length;i++){
-      const a = pts[i];
-      const axp = a.x*w, ayp = a.y*h;
-      for (let j=i+1;j<pts.length;j++){
-        const b = pts[j];
-        const bxp = b.x*w, byp = b.y*h;
-        const dx = axp - bxp;
-        const dy = ayp - byp;
-        const d = Math.sqrt(dx*dx + dy*dy);
-        const max = Math.min(w,h) * 0.22;
-        if (d < max){
-          const t = 1 - d/max;
-          const r = Math.floor(ax*(0.65) + bx*(0.35));
-          const g = Math.floor(ay*(0.65) + by*(0.35));
-          const bcol = Math.floor(az*(0.65) + bz*(0.35));
-          ctx.strokeStyle = `rgba(${r},${g},${bcol},${0.12*t})`;
-          ctx.lineWidth = Math.max(1, 1.2*DPR);
-          ctx.beginPath();
-          ctx.moveTo(axp, ayp);
-          ctx.lineTo(bxp, byp);
-          ctx.stroke();
-        }
-      }
-    }
-
-    for (const p of pts){
-      const x = p.x*w, y = p.y*h;
-      ctx.fillStyle = 'rgba(122,162,214,.35)';
-      ctx.beginPath();
-      ctx.arc(x, y, 1.4*DPR, 0, Math.PI*2);
-      ctx.fill();
-    }
-
-    requestAnimationFrame(step);
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    width = Math.max(1, Math.floor(rect.width * DPR));
+    height = Math.max(1, Math.floor(rect.height * DPR));
+    canvas.width = width;
+    canvas.height = height;
   }
 
-  requestAnimationFrame(step);
+  function drawGrid(time) {
+    const spacing = Math.max(42 * DPR, width / 12);
+    context.strokeStyle = palette.line;
+    context.lineWidth = 1;
+
+    for (let x = -spacing; x < width + spacing; x += spacing) {
+      const offset = Math.sin(time * 0.00035 + x * 0.002) * 10 * DPR;
+      context.beginPath();
+      context.moveTo(x + offset, 0);
+      context.lineTo(x - offset * 0.6, height);
+      context.stroke();
+    }
+
+    for (let y = -spacing; y < height + spacing; y += spacing) {
+      const offset = Math.cos(time * 0.00025 + y * 0.003) * 12 * DPR;
+      context.beginPath();
+      context.moveTo(0, y + offset);
+      context.lineTo(width, y - offset * 0.45);
+      context.stroke();
+    }
+  }
+
+  function drawOrbs() {
+    orbs.forEach((orb) => {
+      orb.x += orb.dx;
+      orb.y += orb.dy;
+
+      if (orb.x < 0.05 || orb.x > 0.95) orb.dx *= -1;
+      if (orb.y < 0.08 || orb.y > 0.92) orb.dy *= -1;
+
+      const gradient = context.createRadialGradient(
+        orb.x * width,
+        orb.y * height,
+        0,
+        orb.x * width,
+        orb.y * height,
+        orb.radius * Math.min(width, height)
+      );
+      gradient.addColorStop(0, orb.color);
+      gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      context.fillStyle = gradient;
+      context.beginPath();
+      context.arc(orb.x * width, orb.y * height, orb.radius * Math.min(width, height), 0, Math.PI * 2);
+      context.fill();
+    });
+  }
+
+  function drawContours(time) {
+    const rows = 6;
+    for (let row = 0; row < rows; row += 1) {
+      const yBase = height * (0.18 + row * 0.12);
+      context.beginPath();
+      for (let x = 0; x <= width; x += 8) {
+        const y = yBase + Math.sin(x * 0.012 + time * 0.0012 + row) * (8 + row * 1.8) * DPR;
+        if (x === 0) {
+          context.moveTo(x, y);
+        } else {
+          context.lineTo(x, y);
+        }
+      }
+      context.strokeStyle = `rgba(217, 227, 172, ${0.04 + row * 0.012})`;
+      context.lineWidth = 1.1 * DPR;
+      context.stroke();
+    }
+  }
+
+  function drawPings(time) {
+    pings.forEach((ping, index) => {
+      const pulse = (Math.sin(time * 0.0016 + ping.phase + index) + 1) / 2;
+      const x = ping.x * width;
+      const y = ping.y * height;
+
+      context.fillStyle = palette.dot;
+      context.beginPath();
+      context.arc(x, y, ping.size * DPR, 0, Math.PI * 2);
+      context.fill();
+
+      context.strokeStyle = palette.pulse;
+      context.lineWidth = DPR;
+      context.beginPath();
+      context.arc(x, y, (8 + pulse * 18) * DPR, 0, Math.PI * 2);
+      context.stroke();
+    });
+  }
+
+  function render(time) {
+    context.clearRect(0, 0, width, height);
+
+    context.fillStyle = 'rgba(10, 13, 9, 0.12)';
+    context.fillRect(0, 0, width, height);
+
+    drawOrbs();
+    drawGrid(time);
+    drawContours(time);
+    drawPings(time);
+
+    animationId = window.requestAnimationFrame(render);
+  }
+
+  resize();
+  window.addEventListener('resize', resize, { passive: true });
+  animationId = window.requestAnimationFrame(render);
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      window.cancelAnimationFrame(animationId);
+    } else {
+      animationId = window.requestAnimationFrame(render);
+    }
+  });
 })();

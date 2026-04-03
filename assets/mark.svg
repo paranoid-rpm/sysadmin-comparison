@@ -1,8 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
-  <path d="M32 6c8 6 16 7 22 8v18c0 14-9.5 22.5-22 26C19.5 54.5 10 46 10 32V14c6-1 14-2 22-8z" stroke="#7aa2d6" stroke-width="3" />
-  <path d="M22 26h20M22 34h20" stroke="#9fb8aa" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="22" cy="26" r="3" fill="#9fb8aa"/>
-  <circle cx="42" cy="26" r="3" fill="#9fb8aa"/>
-  <circle cx="22" cy="34" r="3" fill="#9fb8aa"/>
-  <circle cx="42" cy="34" r="3" fill="#9fb8aa"/>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="markShield" x1="12" y1="8" x2="52" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d5df8c"/>
+      <stop offset="1" stop-color="#788d56"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 6c8 6 16 7 22 8v18c0 14-9.5 22.5-22 26C19.5 54.5 10 46 10 32V14c6-1 14-2 22-8z" stroke="url(#markShield)" stroke-width="3" />
+  <path d="M20 22h24M20 32h24M20 42h14" stroke="rgba(238,242,221,.8)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="44" cy="42" r="6" stroke="#d5df8c" stroke-width="3"/>
+  <circle cx="44" cy="42" r="2.2" fill="#d5df8c"/>
 </svg>

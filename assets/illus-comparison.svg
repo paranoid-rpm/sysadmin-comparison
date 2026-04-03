@@ -1,21 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
-  <rect x="1" y="1" width="878" height="478" rx="18" stroke="rgba(255,255,255,.18)"/>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
+  <defs>
+    <linearGradient id="cmpBg" x1="90" y1="80" x2="790" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#21281b"/>
+      <stop offset="1" stop-color="#10140e"/>
+    </linearGradient>
+  </defs>
 
-  <path d="M190 330h500" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <rect width="880" height="480" rx="24" fill="url(#cmpBg)"/>
+  <path d="M40 96H840M40 192H840M40 288H840M40 384H840" stroke="rgba(227,234,191,.07)"/>
+  <path d="M120 40V440M280 40V440M440 40V440M600 40V440M760 40V440" stroke="rgba(227,234,191,.07)"/>
+  <rect x="28" y="28" width="824" height="424" rx="20" stroke="rgba(217,227,172,.18)" stroke-width="2"/>
+  <path d="M58 58h52M58 58v52M822 58h-52M822 58v52M58 422h52M58 422v-52M822 422h-52M822 422v-52" stroke="#d5df8c" stroke-width="2.5" stroke-linecap="round"/>
 
-  <path d="M290 330c0-80 60-150 150-150s150 70 150 150" stroke="#7aa2d6" stroke-width="3"/>
-  <path d="M440 180v-80" stroke="#7aa2d6" stroke-width="3" stroke-linecap="round"/>
-  <path d="M440 100l-18 18M440 100l18 18" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-linecap="round"/>
+  <rect x="138" y="126" width="178" height="92" rx="16" fill="rgba(255,255,255,.02)" stroke="#8ea464" stroke-width="3"/>
+  <rect x="564" y="126" width="178" height="92" rx="16" fill="rgba(255,255,255,.02)" stroke="#8ea464" stroke-width="3"/>
+  <text x="166" y="114" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">CRITERIA</text>
+  <text x="174" y="160" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">STANDARD</text>
+  <text x="174" y="188" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">FUNCTION</text>
+  <text x="600" y="160" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">MODE</text>
+  <text x="600" y="188" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">CONTROL</text>
 
-  <rect x="160" y="120" width="170" height="90" rx="14" stroke="#9fb8aa" stroke-width="3"/>
-  <rect x="550" y="120" width="170" height="90" rx="14" stroke="#9fb8aa" stroke-width="3"/>
+  <path d="M316 172H564" stroke="#d5df8c" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="316" cy="172" r="6" fill="#d5df8c"/>
+  <circle cx="564" cy="172" r="6" fill="#d5df8c"/>
 
-  <path d="M330 165h220" stroke="rgba(255,255,255,.22)" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="330" cy="165" r="6" fill="#9fb8aa"/>
-  <circle cx="550" cy="165" r="6" fill="#9fb8aa"/>
-
-  <text x="190" y="110" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Критерии</text>
-  <text x="190" y="150" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">норма</text>
-  <text x="580" y="150" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">режим</text>
-  <text x="416" y="430" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">документирование</text>
+  <path d="M220 332c0-88 68-156 158-156s158 68 158 156" stroke="#d5df8c" stroke-width="4"/>
+  <circle cx="440" cy="176" r="18" stroke="#d5df8c" stroke-width="3"/>
+  <path d="M440 158V92M422 110l18-18 18 18" stroke="rgba(238,242,221,.58)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M192 332H688" stroke="rgba(238,242,221,.22)" stroke-width="2"/>
+  <text x="360" y="422" fill="rgba(238,242,221,.62)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">DOCUMENTATION AXIS</text>
 </svg>

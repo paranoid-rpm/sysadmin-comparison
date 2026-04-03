@@ -1,20 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
-  <rect x="1" y="1" width="878" height="478" rx="18" stroke="rgba(255,255,255,.18)"/>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" fill="none">
+  <defs>
+    <linearGradient id="milBg" x1="90" y1="70" x2="780" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#21281b"/>
+      <stop offset="1" stop-color="#10140e"/>
+    </linearGradient>
+    <linearGradient id="milLine" x1="180" y1="150" x2="718" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d5df8c"/>
+      <stop offset="1" stop-color="#7f9659"/>
+    </linearGradient>
+  </defs>
 
-  <path d="M150 330c0-48 44-88 98-88h48c54 0 98 40 98 88" stroke="#7aa2d6" stroke-width="3"/>
-  <path d="M250 150v92" stroke="#7aa2d6" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="250" cy="146" r="10" fill="#7aa2d6"/>
+  <rect width="880" height="480" rx="24" fill="url(#milBg)"/>
+  <path d="M40 96H840M40 192H840M40 288H840M40 384H840" stroke="rgba(227,234,191,.07)"/>
+  <path d="M120 40V440M280 40V440M440 40V440M600 40V440M760 40V440" stroke="rgba(227,234,191,.07)"/>
+  <rect x="28" y="28" width="824" height="424" rx="20" stroke="rgba(217,227,172,.18)" stroke-width="2"/>
+  <path d="M58 58h52M58 58v52M822 58h-52M822 58v52M58 422h52M58 422v-52M822 422h-52M822 422v-52" stroke="#d5df8c" stroke-width="2.5" stroke-linecap="round"/>
 
-  <path d="M250 190l-70 70M250 190l70 70" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="232" cy="240" r="92" stroke="#d5df8c" stroke-width="3"/>
+  <circle cx="232" cy="240" r="56" stroke="rgba(213,223,140,.34)" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="232" cy="240" r="10" fill="#d5df8c"/>
+  <path d="M232 148v40M232 292v40M140 240h40M284 240h40M168 176l28 28M268 276l28 28M296 176l-28 28M196 276l-28 28" stroke="rgba(238,242,221,.56)" stroke-width="3" stroke-linecap="round"/>
+  <text x="132" y="120" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">SIGNAL NODE</text>
+  <text x="148" y="366" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">UPLINK / STANDBY / ENCRYPT</text>
 
-  <rect x="520" y="150" width="260" height="210" rx="16" stroke="#9fb8aa" stroke-width="3"/>
-  <path d="M545 190h210M545 230h210M545 270h160" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-linecap="round"/>
+  <rect x="520" y="140" width="246" height="196" rx="18" fill="rgba(255,255,255,.02)" stroke="#8ea464" stroke-width="3"/>
+  <path d="M548 182h126M548 220h186M548 258h162M548 296h112" stroke="rgba(238,242,221,.6)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="716" cy="188" r="14" stroke="#d5df8c" stroke-width="3"/>
+  <circle cx="716" cy="188" r="4" fill="#d5df8c"/>
+  <circle cx="716" cy="296" r="14" stroke="rgba(213,223,140,.45)" stroke-width="3"/>
+  <path d="M696 296h-28" stroke="rgba(238,242,221,.55)" stroke-width="3" stroke-linecap="round"/>
+  <text x="548" y="118" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">COMMAND POST</text>
+  <text x="548" y="364" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">MODE -> ACCESS -> LOG</text>
 
-  <path d="M370 240h150" stroke="rgba(255,255,255,.22)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M520 240l-18-10v20z" fill="rgba(255,255,255,.22)"/>
-
-  <text x="140" y="110" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Узел связи</text>
-  <text x="545" y="130" fill="rgba(255,255,255,.74)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="14">Пункт управления</text>
-
-  <text x="545" y="392" fill="rgba(255,255,255,.56)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">режим → доступ → учет</text>
+  <path d="M324 240H520" stroke="url(#milLine)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M520 240l-20-12v24z" fill="#d5df8c"/>
+  <circle cx="422" cy="240" r="28" stroke="rgba(213,223,140,.18)" stroke-width="2"/>
+  <path d="M394 240h56M422 212v56" stroke="rgba(213,223,140,.4)" stroke-width="2" stroke-linecap="round"/>
 </svg>
