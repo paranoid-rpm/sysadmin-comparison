@@ -3,8 +3,8 @@
   const footers = document.querySelectorAll('.footer__inner > div:first-child');
   footers.forEach((el) => {
     const text = (el.textContent || '').trim();
-    if (text.includes('SysAdmin Comparison')) {
-      el.textContent = `© ${year} · SysAdmin Comparison`;
+    if (text.includes('Сравнение системных администраторов')) {
+      el.textContent = `© ${year} · Сравнение системных администраторов`;
     }
   });
 
@@ -192,3 +192,4 @@
     }
   });
 })();
+
