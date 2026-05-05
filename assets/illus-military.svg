@@ -20,8 +20,8 @@
   <circle cx="232" cy="240" r="56" stroke="rgba(213,223,140,.34)" stroke-width="2" stroke-dasharray="8 8"/>
   <circle cx="232" cy="240" r="10" fill="#d5df8c"/>
   <path d="M232 148v40M232 292v40M140 240h40M284 240h40M168 176l28 28M268 276l28 28M296 176l-28 28M196 276l-28 28" stroke="rgba(238,242,221,.56)" stroke-width="3" stroke-linecap="round"/>
-  <text x="132" y="120" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">SIGNAL NODE</text>
-  <text x="148" y="366" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">UPLINK / STANDBY / ENCRYPT</text>
+  <text x="132" y="120" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">УЗЕЛ СВЯЗИ</text>
+  <text x="148" y="366" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">КАНАЛ / РЕЗЕРВ / ШИФРОВАНИЕ</text>
 
   <rect x="520" y="140" width="246" height="196" rx="18" fill="rgba(255,255,255,.02)" stroke="#8ea464" stroke-width="3"/>
   <path d="M548 182h126M548 220h186M548 258h162M548 296h112" stroke="rgba(238,242,221,.6)" stroke-width="3" stroke-linecap="round"/>
@@ -29,8 +29,8 @@
   <circle cx="716" cy="188" r="4" fill="#d5df8c"/>
   <circle cx="716" cy="296" r="14" stroke="rgba(213,223,140,.45)" stroke-width="3"/>
   <path d="M696 296h-28" stroke="rgba(238,242,221,.55)" stroke-width="3" stroke-linecap="round"/>
-  <text x="548" y="118" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">COMMAND POST</text>
-  <text x="548" y="364" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">MODE -> ACCESS -> LOG</text>
+  <text x="548" y="118" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">КОМАНДНЫЙ ПУНКТ</text>
+  <text x="548" y="364" fill="rgba(238,242,221,.6)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">РЕЖИМ -&gt; ДОПУСК -&gt; ЖУРНАЛ</text>
 
   <path d="M324 240H520" stroke="url(#milLine)" stroke-width="4" stroke-linecap="round"/>
   <path d="M520 240l-20-12v24z" fill="#d5df8c"/>

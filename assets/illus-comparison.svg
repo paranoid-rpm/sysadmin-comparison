@@ -14,11 +14,11 @@
 
   <rect x="138" y="126" width="178" height="92" rx="16" fill="rgba(255,255,255,.02)" stroke="#8ea464" stroke-width="3"/>
   <rect x="564" y="126" width="178" height="92" rx="16" fill="rgba(255,255,255,.02)" stroke="#8ea464" stroke-width="3"/>
-  <text x="166" y="114" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">CRITERIA</text>
-  <text x="174" y="160" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">STANDARD</text>
-  <text x="174" y="188" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">FUNCTION</text>
-  <text x="600" y="160" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">MODE</text>
-  <text x="600" y="188" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">CONTROL</text>
+  <text x="166" y="114" fill="#eef2dd" font-family="Consolas, 'Courier New', monospace" font-size="16" letter-spacing="2">КРИТЕРИИ</text>
+  <text x="174" y="160" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">НОРМА</text>
+  <text x="174" y="188" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">ФУНКЦИЯ</text>
+  <text x="600" y="160" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">РЕЖИМ</text>
+  <text x="600" y="188" fill="rgba(238,242,221,.7)" font-family="Consolas, 'Courier New', monospace" font-size="12">КОНТРОЛЬ</text>
 
   <path d="M316 172H564" stroke="#d5df8c" stroke-width="4" stroke-linecap="round"/>
   <circle cx="316" cy="172" r="6" fill="#d5df8c"/>
@@ -28,5 +28,5 @@
   <circle cx="440" cy="176" r="18" stroke="#d5df8c" stroke-width="3"/>
   <path d="M440 158V92M422 110l18-18 18 18" stroke="rgba(238,242,221,.58)" stroke-width="3" stroke-linecap="round"/>
   <path d="M192 332H688" stroke="rgba(238,242,221,.22)" stroke-width="2"/>
-  <text x="360" y="422" fill="rgba(238,242,221,.62)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">DOCUMENTATION AXIS</text>
+  <text x="360" y="422" fill="rgba(238,242,221,.62)" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="1.5">ОСЬ ДОКУМЕНТИРОВАНИЯ</text>
 </svg>
